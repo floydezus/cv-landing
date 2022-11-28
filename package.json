@@ -1,0 +1,23 @@
+{
+  "name": "cv-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floydezus/cv-landing.git"
+  },
+  "keywords": [],
+  "author": "Alexander Tokarev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/floydezus/cv-landing/issues"
+  },
+  "homepage": "https://github.com/floydezus/cv-landing#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
