@@ -178,7 +178,7 @@ a {
   gap: 50px;
 }
 
-.profile__title, .hobbies__title, .languages__title {
+.profile__title, .hobbies__title, .languages__title, .skills__title {
   max-height: 30px;
 }
 
@@ -202,8 +202,7 @@ a {
 
 /* Education Start */
 .education {
-  /*page-break-before: always;*/
-  /*widows: 5;*/
+
 }
 
 @media print {
@@ -224,10 +223,11 @@ a {
 }
 
 .skills__title {
-  max-height: 30px;
+  height: 23px;
 }
 
 .skills__list {
+  margin-top: 0;
   list-style: none;
   line-height: 160%;
   column-count: 2;
