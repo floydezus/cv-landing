@@ -1,4 +1,4 @@
-#[CV Landing Page](https://floydezus.github.io/cv-landing)
+# [CV Landing Page](https://floydezus.github.io/cv-landing)
 
 [![imageup.ru](https://imageup.ru/img211/4086525/cv-example.jpg)](https://imageup.ru/img211/4086525/cv-example.jpg.html)
 

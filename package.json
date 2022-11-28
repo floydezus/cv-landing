@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/floydezus/cv-landing/issues"
   },
-  "homepage": "https://github.com/floydezus/cv-landing#readme",
+  "homepage": "https://floydezus.github.io/cv-landing",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
