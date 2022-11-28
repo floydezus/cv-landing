@@ -1,0 +1,292 @@
+:root {
+  --font-family: Arial, serif;
+  --container-width: 1000px;
+  --black: #000;
+  --light: #888;
+  counter-reset: section;
+}
+
+/* Components Start */
+
+.container {
+  padding: 20px;
+  display: flex;
+  max-width: var(--container-width);
+  font-family: var(--font-family);
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-top: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--black);
+
+}
+
+.section-title::before {
+  counter-increment: section;
+  content: "0"counter(section) " ";
+}
+
+a {
+  color: inherit;
+}
+
+.header-exp {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header-exp__period {
+  font-size: 14px;
+  font-weight: bolder;
+
+}
+
+.header-exp__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header-exp__title--with-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-exp__sub {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--light);
+}
+
+.header-exp__location {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.block-experience {
+
+}
+
+.block-experience__head {
+  margin-bottom: 20px;
+}
+
+.block-experience__description {
+  font-size: 14px;
+  font-weight: 100;
+  color: var(--light);
+  line-height: 160%;
+  margin: 10px 0 20px;
+}
+
+.description-list {
+  padding-left: 35%;
+}
+
+.description-list--order {
+  padding-left: 0;
+}
+
+.description-list--order li {
+  margin-left: 20px;
+}
+
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+/* Components End */
+
+/* Header Start */
+.header {
+
+}
+
+.header__title {
+  margin: 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title::after {
+  content: '';
+  border: 1px var(--black) solid;
+  width: 30px;
+  height: 30px;
+  background: var(--black);
+}
+
+.header__subtitle {
+  font-size: 20px;
+}
+
+/* Header End */
+
+/* Contacts Start */
+.contact-info {
+  display: grid;
+  grid-gap: 10px 20px;
+  grid-template-areas: "address phone"
+                        "email links";
+
+}
+
+.contact-info__section {
+  font-size: 12px;
+  text-align: left;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 100px 150px;
+  grid-template-areas: "title content";
+}
+
+.contact-info__title {
+  font-weight: bold;
+
+}
+
+.contact-info__content {
+  color: var(--light);
+  text-align: left;
+  max-width: 200px;
+}
+
+.contact-info__content--phone a, .contact-info__content--email a {
+  text-decoration: none;
+}
+
+
+/* Contacts End */
+
+/* Profile Start */
+.profile, .hobbies{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.profile__title, .hobbies__title, .languages__title, .skills__title {
+  max-height: 30px;
+}
+
+.profile__content, .hobbies__content {
+  max-width: 70%;
+  line-height: 160%;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+/* Profile End */
+
+/* Employment Start */
+.employment__title {
+  margin-bottom: 20px;
+}
+
+
+/* Employment End */
+
+/* Education Start */
+.education {
+
+}
+
+@media print {
+  .education .education__title {
+    margin-bottom: 100px;
+    page-break-after: always;
+  }
+
+}
+
+/* Education End */
+
+
+/* Skills Start */
+.skills {
+  display: flex;
+
+}
+
+.skills__title {
+  height: 23px;
+}
+
+.skills__list {
+  margin-top: 0;
+  list-style: none;
+  line-height: 160%;
+  column-count: 2;
+  padding-left: 20%;
+}
+
+.skills__item {
+  font-weight: lighter;
+  font-size: small;
+}
+
+
+/* Skills End */
+
+
+/* Languages Start */
+.languages {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.languages__list {
+  column-count: 2;
+}
+
+.languages__item {
+  display: grid;
+  grid-template-columns: 100px 120px;
+}
+
+.language__title {
+
+}
+
+.language__lvl {
+  display: flex;
+  list-style: none;
+  gap: 2px;
+  margin: 0;
+}
+
+.language__lvl li {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+}
+
+#russian li {
+  background: var(--black);
+}
+
+#english li:nth-of-type(-n+3) {
+  background: var(--black);
+}
+
+#serbian li:nth-of-type(-n+2){
+  background: var(--black);
+}
+
+/* Languages End */
