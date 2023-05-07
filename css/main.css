@@ -1,5 +1,5 @@
 :root {
-  --font-family: Arial, serif;
+  --font-family: Arial, sans-serif;
   --container-width: 1000px;
   --black: #000;
   --light: #888;
@@ -121,12 +121,20 @@ a {
   align-items: center;
 }
 
-.header__title::after {
+/*.header__title::after {*/
+/*  content: '';*/
+/*  border: 1px var(--black) solid;*/
+/*  width: 30px;*/
+/*  height: 30px;*/
+/*  background: var(--black);*/
+/*}*/
+
+.header__title--with-photo::after {
   content: '';
-  border: 1px var(--black) solid;
-  width: 30px;
-  height: 30px;
-  background: var(--black);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: url("../assets/profile.jpg") no-repeat;
 }
 
 .header__subtitle {
